@@ -71,7 +71,8 @@ endif
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi-service
+    android.hardware.wifi-service \
+    android.hardware.wifi.hostapd@1.0.vendor
 
 # NFC packages
 PRODUCT_PACKAGES += \
