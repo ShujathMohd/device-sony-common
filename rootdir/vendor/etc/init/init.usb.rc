@@ -82,6 +82,10 @@ on boot
     mount functionfs ptp /dev/usb-ffs/ptp rmode=0770,fmode=0660,uid=1024,gid=1024,no_disconnect=1
     setprop vendor.sys.usb.configfs 1
 
+on property:=ro.boot.usb.dwc3=*
+    wait /sys/bus/platform/devices/${ro.boot.usb.dwc3}/mode
+    write /sys/bus/platform/devices/${ro.boot.usb.dwc3}/mode peripheral
+
 # USB compositions
 #
 # Following are the triggers to configure various
