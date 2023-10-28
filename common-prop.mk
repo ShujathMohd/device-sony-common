@@ -310,6 +310,7 @@ ifeq ($(SOMC_KERNEL_VERSION), 4.14)
 OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 endif
 
+#Bluetooth Profiles
 PRODUCT_PRODUCT_PROPERTIES += \
     bluetooth.profile.a2dp.source.enabled=true \
     bluetooth.profile.asha.central.enabled=true \
