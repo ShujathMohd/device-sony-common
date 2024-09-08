@@ -61,13 +61,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.usb.rc",
-    src: "vendor/etc/init/init.usb.rc",
-    sub_dir: "init",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "adb_tcp.rc",
     src: "vendor/etc/init/adb_tcp.rc",
     sub_dir: "init",
