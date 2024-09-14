@@ -31,7 +31,10 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/core-utils \
     vendor/qcom/opensource/display/$(display_platform) \
     vendor/qcom/opensource/display-commonsys-intf/$(display_platform) \
-    device/sony/customization
+    device/sony/customization \
+    hardware/google/pixel \
+    hardware/google/interfaces
+
 
 # Build scripts
 SONY_CLEAR_VARS := $(COMMON_PATH)/sony_clear_vars.mk
