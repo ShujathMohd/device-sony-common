@@ -142,10 +142,6 @@ endif
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.sony
-
 # Only define bootctrl HAL availability on AB platforms:
 ifeq ($(AB_OTA_UPDATER),true)
 PRODUCT_PACKAGES += \
