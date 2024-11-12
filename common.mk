@@ -35,6 +35,14 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/google/interfaces
 
+# Wi-Fi HAL
+ifeq ($(BOARD_WLAN_CHIP),wcn6740)
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom/wlan/wcn6740
+else
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom/wlan/legacy
+endif
 
 # Build scripts
 SONY_CLEAR_VARS := $(COMMON_PATH)/sony_clear_vars.mk
