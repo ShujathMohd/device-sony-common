@@ -1,7 +1,3 @@
-# RenderScript HAL
-PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl
-
 # Composer
 # Everything prior to kernel 4.19 uses the sm8150 display HAL
 ifeq ($(filter 4.14, $(SOMC_KERNEL_VERSION)),)
