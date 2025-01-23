@@ -66,6 +66,8 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
+    batching.conf \
+    gnss_antenna_info.conf \
     libbatching \
     libgeofencing \
     libgnss
@@ -73,6 +75,10 @@ PRODUCT_PACKAGES += \
 # Location
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
+    libloc_socket \
+    liblocation_api_msg \
+    liblocation_integration_api \
+    liblocation_client_api \
     libgnsspps \
     libsynergy_loc_api
 
