@@ -97,7 +97,6 @@ PRODUCT_PACKAGES += \
 
 # NFC packages
 PRODUCT_PACKAGES += \
-    NfcNci \
     Tag
 
 # CAMERA
